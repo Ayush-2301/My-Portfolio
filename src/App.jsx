@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar,AnimatedRoutes } from "./components";
-import { BrowserRouter as Router} from "react-router-dom"
+import { HashRouter as Router} from "react-router-dom"
 import "./index.css";
 const App = () => {
   const [darkMode, setDarkMode] = React.useState(false);
@@ -10,7 +10,7 @@ const App = () => {
   }
 
   return (    
-      <Router>
+      <Router basename="/">
         
         <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />   
         <AnimatedRoutes darkMode={darkMode} />   
