@@ -72,15 +72,15 @@ const Crousal = (props) => {
                   variants={items}
                   href={item.link}
                   target="_blank"
-                  className="flex md:mt-[20px] sourcebtn rounded-2xl p-2 cursor-pointer justify-center items-center"
+                  className="flex z-10 md:mt-[20px] w-[150px] h-[50px] sourcebtn rounded-2xl p-2 cursor-pointer justify-center items-center"
                 >
                   <button
-                    className={` cursor-pointer rounded-md  left-[200px] font-semibold`}
+                    className={`z-10 cursor-pointer rounded-md  left-[200px] font-semibold`}
                     style={style}
                   >
                     Source Code
                   </button>
-                  <i className="fa-solid fa-angle-right cursor-pointer text-3xl  text-Projects-theme m-0 p-0 "></i>
+                  <i className="fa-solid fa-angle-right  z-10cursor-pointer text-3xl  text-Projects-theme m-0 p-0 "></i>
                 </motion.a>
               </motion.div>
             </div>

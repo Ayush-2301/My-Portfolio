@@ -7,7 +7,7 @@ module.exports = {
         standardFont: "'Roboto Condensed', sans-serif",
       },
       backgroundColor: {
-        "Light-Mode-color": "#EDE6F2",
+        "Light-Mode-color": "#F3F7F0",
         "Dark-black-color": "#0B0C10",
         "light-Color": "#EBF2FA",
         "Home-theme": "#279AF1",

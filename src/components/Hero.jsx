@@ -8,7 +8,7 @@ const Hero = (props) => {
     color: props.darkMode ? "#0B0C10" : "#EBF2FA",
   };
   const bg_color = {
-    backgroundColor: !props.darkMode ? "#0B0C10" : "#EDE6F2",
+    backgroundColor: !props.darkMode ? "#0B0C10" : "#F3F7F0",
   };
   const [state] = React.useState({
     title: "I'm",

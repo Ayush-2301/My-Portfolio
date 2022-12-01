@@ -4,7 +4,7 @@ import { Crousal } from "../components";
 
 const Projects = (props) => {
   const bg_color = {
-    backgroundColor: !props.darkMode ? "#0B0C10" : "#EDE6F2",
+    backgroundColor: !props.darkMode ? "#0B0C10" : "#F3F7F0",
   };
   const style = {
     color: props.darkMode ? "#131112" : "#EBF2FA",
@@ -25,10 +25,13 @@ const Projects = (props) => {
           animate={{ y: "0%" }}
           exit={{ opacity: 1 }}
           transition={{ duration: 0.55, ease: "easeOut" }}
-          className="absolute  left-[58px] md:left-[160px] uppercase underline decoration-8 underline-offset-4 decoration-Projects-theme top-[25px] md:top-[2px] ml-5 mb-0 md:mb-2  text-3xl md:text-5xl my-5 font-bold font-standardFont"
+          className="absolute  left-[58px] md:left-[160px] top-[25px] md:top-[2px] ml-5 mb-0 md:mb-2  text-3xl md:text-5xl my-5 font-bold font-standardFont flex items-center"
           style={style}
         >
+          <p className=" uppercase underline decoration-8 underline-offset-4 decoration-Projects-theme">
           Projects
+          </p>
+          <i className="fa-solid fa-folder-open ml-1 text-Projects-theme"></i>
         </motion.div>
         <>
           <Crousal darkMode={props.darkMode} />

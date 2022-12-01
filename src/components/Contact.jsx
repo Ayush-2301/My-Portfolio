@@ -2,13 +2,13 @@ import React from "react";
 import { motion } from "framer-motion";
 const Contact = (props) => {
   const bg_color = {
-    backgroundColor: !props.darkMode ? "#0B0C10" : "#EDE6F2",
+    backgroundColor: !props.darkMode ? "#0B0C10" : "#F3F7F0",
   };
   const style = {
     color: props.darkMode ? "#0B0C10" : "#EBF2FA",
   };
   const Inversestyle = {
-    color: props.darkMode ? "#0B0C10" : "#EBF2FA",
+    color: !props.darkMode ? "#0B0C10" : "#EBF2FA",
   };
   const UserInput = ({ placeholder, name, type, value, handleChange }) => (
     <input
@@ -63,12 +63,26 @@ const Contact = (props) => {
             variants={variants}
             className="p-3 flex flex-col justify-center  w-full h-[100%] md:w-[100%] md:h-screen "
           >
-            <motion.h1
+            <motion.div
               variants={items}
-              className="md:text-6xl text-3xl font-bold md:mb-10 mb-2 capitalize font-standardFont underline decoration-[20px] underline-offset-4 decoration-Contact-theme"
+              className="md:text-6xl text-3xl font-bold md:mb-10 mb-1 capitalize font-standardFont  flex flex-col md:flex-ro"
             >
-              Contact me!
-            </motion.h1>
+             <p ><div className="flex flex-row items-center">
+              <p className="underline decoration-[20px] underline-offset-4 decoration-Contact-theme">Contact me!</p> 
+              <i className="fa-solid fa-paper-plane ml-1 md:text-5xl text-2xl text-Contact-theme"></i>
+              </div>
+              </p>
+             <div className="text-sm md:text-lg no-underline px-2 py-1" style={style}>
+              <div className="flex flex-row  items-center">
+              <i className="fa-solid fa-envelope text-base mr-2"></i>
+              <p className="inline lowercase" >ayushchauhan233@gmail.com</p> 
+              </div>
+              <div className="flex flex-row  items-center">
+<i className="fa-solid fa-phone text-base mr-2"></i>
+              <p className="inline lowercase">+91 6307972740 </p> 
+              </div>
+              </div>
+            </motion.div>
             <motion.div
               variants={items}
               className="flex flex-col md:flex-row md:gap-x-2 "
@@ -120,7 +134,7 @@ const Contact = (props) => {
             id="map-kiet"
             src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=28.752440436127902,77.49862051892788+(Ayush%20Chauhan)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
             frameBorder="0"
-            className=" w-full p-2 md:w-[100%] h-[90%] md:h-screen border-none"
+            className=" w-full p-2 md:w-[100%] h-[70%] md:h-screen border-none"
             allowFullScreen=""
           ></motion.iframe>
         </div>

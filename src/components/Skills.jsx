@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import "../index.css";
 const Skills = (props) => {
   const bg_color = {
-    backgroundColor: !props.darkMode ? "#0B0C10" : "#EDE6F2",
+    backgroundColor: !props.darkMode ? "#0B0C10" : "#F3F7F0",
   };
   const style = {
     color: props.darkMode ? "#0B0C10" : "#EBF2FA",
@@ -69,9 +69,12 @@ const Skills = (props) => {
             exit={{ opacity: 1 }}
             transition={{ duration: 0.75, ease: "easeOut" }}
             style={style}
-            className="text-3xl md:text-5xl uppercase underline decoration-8 underline-offset-4 decoration-Skill-theme mb-3 justify-start text-start font-bold md:font-extrabold ml-2 font-standardFont "
+            className="text-3xl md:text-5xl uppercase  mb-3 justify-start text-start font-bold md:font-extrabold ml-2 font-standardFont flex items-center "
           >
-            Skills
+            <p className="underline decoration-8 underline-offset-4 decoration-Skill-theme ">
+            Skills 
+            </p>
+            <i className="fa-solid fa-gears ml-1 text-Skill-theme"></i>
           </motion.h2>
           <div className="bg-gray-400 backdrop-filter rounded-md backdrop-blur-sm bg-opacity-10 p-5 ">
             <div className="grid md:grid-cols-3 grid-cols-2 grid-flow-row gap-x-[50px] md:gap-x-[120px] md:gap-y-[50px] p-5 md:p-2 lg:grid-cols-4 ">
